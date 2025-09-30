@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent"></div>
+    <p></p>
+    <br>
+    <br>
+    <button>increase </button>
+    <script>
+        let count=0
+         let button=document.querySelector("button")
+         console.log(button)
+         button.addEventListener("click",function(){
+            count++;
+            document.querySelector("p").innerText=count
+         })
+    </script>
+</body>
+
+</html>

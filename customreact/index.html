@@ -5,21 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div class="parent"></div>
-    <p></p>
-    <br>
-    <br>
-    <button>increase </button>
-    <script>
-        let count=0
-         let button=document.querySelector("button")
-         console.log(button)
-         button.addEventListener("click",function(){
-            count++;
-            document.querySelector("p").innerText=count
-         })
-    </script>
-</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box1{
+        background-color: black;
+    }
+    .box2{
+        background-color: aqua;
+        
+    }
+    .box3{
+        background-color: blue;
+        position: sticky;
+        top: 10px;
+        left: 100px ;
+        height: 100px;
+    }
+    .box4{
+        background-color: brown
+        ;
+    }
+    .box{
+        height:133vh;
+        width: 80vw;
+        border:2px solid black;
+        padding: 3px; 
+        margin: 3px;
 
+    }
+    .parent{
+        padding: 30px;
+        margin: 35;
+        border: 3px solid  green;
+    }
+</style>
+<body>
+    <div class="parent">
+    
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+    </div>
+</body>
 </html>

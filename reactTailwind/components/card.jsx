@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Card(props) {
-    console.log("props", props)
+function Card({name,me:{role}}) {
+    
   return (
     <div className="flex items-center justify-center">
       <div className="md:max-w-sm w-full p-6 rounded-xl shadow-xl bg-black border border-zinc-800 hover:border-white transition-all duration-300 hover:transform hover:scale-105 group">
@@ -21,7 +21,7 @@ function Card(props) {
             Featured
           </span>
           <h2 className="text-xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-200">
-            Modern Design Solutions
+            {name} <br />{role}
           </h2>
         </div>
 
